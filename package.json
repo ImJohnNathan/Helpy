@@ -1,0 +1,19 @@
+{
+  "name": "helpy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ImJohnNathan/Helpy.git"
+  },
+  "author": "John Nathan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ImJohnNathan/Helpy/issues"
+  },
+  "homepage": "https://github.com/ImJohnNathan/Helpy#readme"
+}
