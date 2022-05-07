@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ImJohnNathan/Helpy/issues"
   },
-  "homepage": "https://github.com/ImJohnNathan/Helpy#readme"
+  "homepage": "https://github.com/ImJohnNathan/Helpy#readme",
+  "dependencies": {
+    "discord.js": "^13.6.0"
+  }
 }
