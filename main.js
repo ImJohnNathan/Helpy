@@ -45,47 +45,48 @@ client.on('message', message => {
     }
 })
 
-client.on('message', message => {
-    let susmessage = message.content.toLowerCase()
-    if(susmessage.indexOf('sus') != -1) {
-        message.channel.send('AMONG US AMONG US AMONG US AMONG US AMONG US')
-    }
-})
 
-client.on('message', message => {
-    switch(message.content.toLowerCase()) {
-        case 'cringe': 
-            message.channel.send(`ratio + L ${message.author}`)
-        default:
-            return
-    }
-})
 
 client.on('message', message => {
     if(message.author.username === 'Byle Karnes' && message.author.discriminator == '6338'){
         setTimeout(function () { message.channel.send(`your gay ${message.author}`)
-}, 10000)
+}, 1000)
     }
 })
 
-client.on('message', message => {
-    if(message.content == 'computer: load gay butt sex'){
-        message.channel.send('https://giphy.com/gifs/twerking-guy-twerk-yhVTV3hhdHJhm')
-    }
-})
-
-client.on('message', message => {
-    if(message.content.toLowerCase() == `?hy delete`) {
-        
-    }
-})
-
-client.on('message', message => {
-    if(message.author.username === 'Byle Karnes'){
-        if(message.content.toLowerCase().indexOf('fuck') != -1){
-            message.channel.send('FUCK YOU TOO')
-        } elseif(message.content.toLowerCase().indexOf('shit') != -1);{
-            message.channel.send('KILL YOURSELF BABOON')
+const ClientMessages = {
+    ifJohnSpeaks: client.on('message', message => {
+        if(message.author.username === 'John Nathan' && message.author.discriminator == '4100'){
+            message.channel.send('OUT OF MY COUNTRY YOU DIRTY, FILTHY MEXICAN')
+        }
+    }),
+    sussusAmongUs: client.on('message', message =>{
+          let susmessage = message.content.toLowerCase()
+          if (susmessage.indexOf('sus') != -1) {
+             message.channel.send('AMONG US AMONG US AMONG US AMONG US AMONG US')
+         }
+    }),
+    ratioThisN: client.on('message', message => {
+        let ratioedMessage = message.content.toLowerCase()
+        switch (ratioedMessage) {
+            case (ratioedMessage.indexOf('cringe') != 1):
+                console.log('Cum')
+                message.channel.send(`ratio + L ${message.author}`)
+                break
+            case (ratioedMessage.indexOf('pronoun') != 1):
+                console.log('Cum2')
+                message.channel.send("any female born after 1993 can’t cook… all they know is mcdonald’s , charge they phone, twerk, be bisexual , eat hot chip & lie")
+                break
+            default:
+                console.log('Cum3')
+                return
+        }
+    }),
+    intialize: function(){
+        for(i = 0; Discord.ClientMessages.length - 1; i++) {
+            ClientMessages[i]
         }
     }
-})
+}
+
+ClientMessages.intialize
